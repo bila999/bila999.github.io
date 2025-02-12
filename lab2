@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миний Вэбсайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        a:hover {
+            color: #45a049;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
 
+    <!-- Нүүр хуудас -->
+    <table id="home">
+        <tr>
+            <th colspan="2">Нүүр хуудас</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="https://via.placeholder.com/800x300" alt="Нүүр хуудасны зураг">
+                <h1>Тавтай морил</h1>
+                <p>Энэ бол миний хувийн вэбсайт. Доорх холбоосуудыг ашиглан бусад хуудсууд руу шилжинэ үү.</p>
+                <a href="#about">Миний тухай</a> |
+                <a href="#family">Миний гэр бүл</a> |
+                <a href="#friends">Найзууд</a> |
+                <a href="#contact">Холбоо барих</a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Миний тухай хуудас -->
+    <table id="about">
+        <tr>
+            <th colspan="2">Миний тухай</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="https://via.placeholder.com/200" alt="Миний зураг">
+                <h2>Миний тухай</h2>
+                <p>Би бол оюутан, вэб хөгжүүлэлт сонирхдог. Энэ вэбсайт нь миний анхны туршилтуудын нэг юм.</p>
+                <a href="#home">Нүүр хуудас руу буцах</a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Миний гэр бүл хуудас -->
+    <table id="family">
+        <tr>
+            <th colspan="2">Миний гэр бүл</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="https://via.placeholder.com/400x200" alt="Гэр бүлийн зураг">
+                <h2>Миний гэр бүл</h2>
+                <p>Манай гэр бүл 4 гишүүнтэй: ээж, аав, эгч, би.</p>
+                <a href="#home">Нүүр хуудас руу буцах</a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Найзууд хуудас -->
+    <table id="friends">
+        <tr>
+            <th colspan="2">Найзууд</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="https://via.placeholder.com/400x200" alt="Найзуудын зураг">
+                <h2>Миний найзууд</h2>
+                <p>Миний олон сайхан найзууд байдаг. Тэд нартайгаа хамт зугаалж, хичээлээ хамтран хийдэг.</p>
+                <a href="#home">Нүүр хуудас руу буцах</a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Холбоо барих хуудас -->
+    <table id="contact">
+        <tr>
+            <th colspan="2">Холбоо барих</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h2>Холбоо барих</h2>
+                <p>Холбоо барихыг хүсвэл доорх мэдээллийг ашиглана уу:</p>
+                <p>И-мэйл: example@example.com</p>
+                <p>Утас: 123-456-7890</p>
+                <a href="#home">Нүүр хуудас руу буцах</a>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
