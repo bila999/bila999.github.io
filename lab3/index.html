@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheFacebook Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dae0e6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        .header {
+            background: #3b5998;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .profile-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .profile-picture {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 0;
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .info-table td {
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+        .friends-section {
+            margin-top: 20px;
+        }
+        .friends-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .friend {
+            width: 200px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .friend img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 0;
+        }
+        .friend p {
+            margin: 10px 0 0;
+            font-size: 14px;
+        }
+        .info-container {
+            display: flex;
+            gap: 20px;
+        }
+        .section {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .full-info {
+            width: 30%;
+            min-height: 80vh;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        .banner-column {
+            width: 20%; /* Thinner than the info column */
+            min-height: 80vh;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner-column img {
+            max-width: 100%;
+            height: auto;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        .buttons button {
+            padding: 8px 12px;
+            margin-right: 5px;
+            background-color: #3b5998;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .search-box {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f1f1f1;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .search-box input {
+            width: 20%;
+            padding: 5px;
+        }
+        .search-box button {
+            padding: 5px 10px;
+            background: #3b5998;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">[ TheFacebook ]</div>
+        
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search...">
+            <button onclick="performSearch()">Go</button>
+        </div>
+
+        <div class="profile-section">
+            <div>
+                <img src="profile.jpg" class="profile-picture" alt="Profile Picture">
+                <div class="buttons">
+                    <button>Poke Him!</button>
+                    <button>Send Brian a Message</button>
+                </div>
+            </div>
+            <div class="full-info">
+                <h3>Information</h3>
+                <table class="info-table">
+                    <tr><td><strong>Name:</strong></td><td>Brian Moore</td></tr>
+                    <tr><td><strong>Member Since:</strong></td><td>May 21, 2005</td></tr>
+                    <tr><td><strong>Last Update:</strong></td><td>July 19, 2005</td></tr>
+                    <tr><td><strong>School:</strong></td><td>Puget Sound '09</td></tr>
+                    <tr><td><strong>Status:</strong></td><td>Student</td></tr>
+                    <tr><td><strong>Gender:</strong></td><td>Male</td></tr>
+                    <tr><td><strong>Residence:</strong></td><td>Todd 311</td></tr>
+                    <tr><td><strong>Birthday:</strong></td><td>09/02/1986</td></tr>
+                    <tr><td><strong>Home Town:</strong></td><td>Shorewood, WI</td></tr>
+                    <tr><td><strong>Hobbies:</strong></td><td>Film, Graphic Design, Video Editing</td></tr>
+                    <tr><td><strong>Favorite Music:</strong></td><td>Beck, The Beatles, Radiohead</td></tr>
+                    <tr><td><strong>Favorite Movies:</strong></td><td>Office Space, Eternal Sunshine</td></tr>
+                </table>
+            </div>
+            <!-- Banner Column -->
+            <div class="banner-column">
+                <img src="https://i.pinimg.com/236x/11/8e/cd/118ecdbcdcd3fd1cdb18a2b4f32f2524.jpg" alt="Advertisement">
+            </div>
+        </div>
+
+        <!-- Friends Section -->
+        <div class="friends-section">
+            <h3>Friends</h3>
+            <div class="friends-list">
+                <div class="friend">
+                    <img src="friend"><img src="https://preview.redd.it/mark-zuckerbergs-recent-facebook-selfie-post-v0-duwmqfhudqv81.png?auto=webp&s=0296e0056747007c671fc788ed68c24086020711" alt="Friend 1">
+                    <p>John Doe</p>
+                </div>
+                <div class="friend">
+                    <img src="https://preview.redd.it/they-are-evolving-faster-than-humans-v0-vx76oxkq8qvc1.jpeg?auto=webp&s=8e6ef23cf569c2ada8f9b04014cd006b818df7a4" alt="Friend 2">
+                    <p>Jane Smith</p>
+                </div>
+                <div class="friend">
+                    <img src="https://i.pinimg.com/1200x/cc/39/90/cc3990328faf1bce85585653d7eb5418.jpg" alt="Friend 3">
+                    <p>Alice Johnson</p>
+                </div>
+                <div class="friend">
+                    <img src="https://pbs.twimg.com/media/F0aeZ-qXoAIUg5N.jpg" alt="Friend 4">
+                    <p>Bob Brown</p>
+                </div>
+                <div class="friend">
+                    <img src="https://static.boredpanda.com/blog/wp-content/uploads/2018/04/funny-mark-zuckerberg-congress-hearing-memes-fb4__700-png.jpg" alt="Friend 5">
+                    <p>Charlie Davis</p>
+                </div>
+                <div class="friend">
+                    <img src="https://img.buzzfeed.com/buzzfeed-static/static/2021-04/29/0/campaign_images/9c8276c1d570/mark-zuckerberg-explains-his-really-weird-sunscre-2-717-1619656214-0_dblbig.jpg" alt="Friend 6">
+                    <p>Eve White</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function performSearch() {
+            alert("Search functionality is not implemented yet!");
+        }
+    </script>
+</body>
+</html>
