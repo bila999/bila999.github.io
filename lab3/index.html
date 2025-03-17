@@ -1,273 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TheFacebook Clone</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      width: 1400px;
-      margin: 20px auto;
-      background-color: #fff;
-      box-shadow: 0px 0px 10px rgb(253, 253, 253);
-    }
-    .header {
-      background: #3b5998;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 28px;
-      font-weight: bold;
-    }
-    .search-box {
-      padding: 15px;
-      background: #f1f1f1;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      border: 1px solid #ccc;
-    }
-    .search-box input {
-      width: 25%;
-      padding: 8px;
-      font-size: 14px;
-    }
-    .search-box button {
-      padding: 8px 15px;
-      background: #3b5998;
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-size: 14px;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab3</title>
+    <!-- <link rel="stylesheet" href="lab3.css" /> -->
+    <link rel="stylesheet" href="lab3.css" />
+  </head>
 
-    .main-layout {
-      display: flex;
-    }
-
-    /* Left Column */
-    .left-column {
-      width: 20%;
-      padding: 15px;
-      background-color: #f9f9f9;
-      border-right: 1px solid #ccc;
-    }
-    .navigation {
-      margin-bottom: 20px;
-    }
-    .navigation h3 {
-      margin-top: 0;
-      font-size: 18px;
-    }
-    .navigation ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    .navigation ul li {
-      margin-bottom: 10px;
-    }
-
-    .advertisement {
-      width: 100%;
-      height: 800px;
-      background-color: #f1f1f1;
-      border: 1px solid #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .advertisement img {
-      max-width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* Center Column */
-    .center-column {
-      width: 50%;
-      padding: 15px;
-    }
-    .section {
-      border: 1px solid #ccc;
-      padding: 15px;
-      margin-bottom: 20px;
-      background-color: #f9f9f9;
-    }
-    .profile-picture {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border: 2px solid #ccc;
-    }
-    .buttons {
-      margin-top: 15px;
-    }
-    .buttons button {
-      padding: 10px 15px;
-      margin-right: 10px;
-      background-color: #3b5998;
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-size: 14px;
-    }
-    .info-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    .info-table td {
-      padding: 8px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    .friends-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-    .friend {
-      width: 200px;
-      text-align: center;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      padding: 10px;
-    }
-    .friend img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-    }
-
-    /* Right Column */
-    .right-column {
-      width: 21%;
-      padding: 15px;
-      background-color: #f9f9f9;
-      border-left: 1px solid #ffffff;
-    }
-    .right-column .advertisement {
-      height: 600px;
-    }
-
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="header">[ TheFacebook ]</div>
-
-    <div class="search-box">
-      <input type="text" id="search" placeholder="Search...">
-      <button onclick="performSearch()">Go</button>
-    </div>
-
-    <div class="main-layout">
-      <!-- Left Column -->
-      <div class="left-column">
-        <div class="navigation">
-          <h3>Navigation</h3>
-          <ul>
-            <li><a href="#">My Profile</a></li>
-            <li><a href="#">Messages</a></li>
-            <li><a href="#">Friends</a></li>
-            <li><a href="#">Groups</a></li>
-          </ul>
-        </div>
-        <div class="advertisement">
-          <img src="https://wallpapers.com/images/featured/rick-and-morty-8rc57d4ds44gqzau.jpg" alt="Ad">
-        </div>
-      </div>
-
-      <!-- Center Column -->
-      <div class="center-column">
-        <div class="section">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/MarkZuckerberg-crop.jpg/220px-MarkZuckerberg-crop.jpg" class="profile-picture" alt="Profile Picture">
-          <div class="buttons">
-            <button>Poke Him!</button>
-            <button>Send Brian a Message</button>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img alt="vegeta blue" src="https://wallpapercave.com/wp/wp10681405.png" width="160px" />
+        <div
+          style="
+            width: 348px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 150px;
+          "
+        >
+          <p
+            style="
+              color: #559bf6;
+              font-weight: 900;
+              font-family: sans-serif;
+              font-size: 48px;
+              display: flex;
+              justify-content: center;
+              margin-bottom: 5px;
+            "
+          >
+            [thefacebook]
+          </p>
+          <div style="display: flex; justify-content: space-between">
+            <p style="color: white; font-family: sans-serif">search</p>
+            <p style="color: white; font-family: sans-serif">global</p>
+            <p style="color: white; font-family: sans-serif">social net</p>
+            <p style="color: white; font-family: sans-serif">invite</p>
+            <p style="color: white; font-family: sans-serif">faq</p>
+            <p style="color: white; font-family: sans-serif">logout</p>
           </div>
         </div>
+        <!-- <table>
+          <thead style="color: white">
+            <tr>
+              <th class="simpletext" colspan="7">
+                <strong style="font-weight: 900; font-size: 30pxpx"
+                  >[ thefacebook ]</strong
+                >
+              </th>
+            </tr>
+            <tr>
+              <th
+                class="tabletext simpletext"
+                class="whiteText"
+                style="font-weight: 500"
+              >
+                home
+              </th>
+              <th class="tabletext simpletext">search</th>
+              <th class="tabletext simpletext">global</th>
+              <th class="tabletext simpletext">social net</th>
+              <th class="tabletext simpletext">invite</th>
+              <th class="tabletext simpletext">faq</th>
+              <th class="tabletext simpletext">logout</th>
+            </tr>
+          </thead>
+        </table> -->
+      </header>
 
-        <div class="section">
-          <h3>Information</h3>
-          <table class="info-table">
-            <tr><td><strong>Name:</strong></td><td>Brian Moore</td></tr>
-            <tr><td><strong>Member Since:</strong></td><td>May 21, 2005</td></tr>
-            <tr><td><strong>Last Update:</strong></td><td>July 19, 2005</td></tr>
-            <tr><td><strong>School:</strong></td><td>Puget Sound '09</td></tr>
-            <tr><td><strong>Status:</strong></td><td>Student</td></tr>
-            <tr><td><strong>Gender:</strong></td><td>Male</td></tr>
-            <tr><td><strong>Residence:</strong></td><td>Todd 311</td></tr>
-            <tr><td><strong>Birthday:</strong></td><td>09/02/1986</td></tr>
-            <tr><td><strong>Home Town:</strong></td><td>Shorewood, WI</td></tr>
-            <tr><td><strong>Hobbies:</strong></td><td>Film, Graphic Design, Video Editing</td></tr>
-            <tr><td><strong>Favorite Music:</strong></td><td>Beck, The Beatles, Radiohead</td></tr>
-            <tr><td><strong>Favorite Movies:</strong></td><td>Office Space, Eternal Sunshine</td></tr>
-          </table>
-        </div>
-
-        <div class="section">
-          <h3>Friends</h3>
-          <div class="friends-list">
-            <div class="friend">
-              <img src="https://preview.redd.it/mark-zuckerbergs-recent-facebook-selfie-post-v0-duwmqfhudqv81.png?auto=webp&s=0296e0056747007c671fc788ed68c24086020711" alt="Friend 1">
-              <p>John Doe</p>
-            </div>
-            <div class="friend">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMYR0TAT4xCZgg-7cvDs2gH02sMGHAIbFDYQ&s" alt="Friend 2">
-              <p>Jane Smith</p>
-            </div>
-            <div class="friend">
-              <img src="https://i.pinimg.com/1200x/cc/39/90/cc3990328faf1bce85585653d7eb5418.jpg" alt="Friend 3">
-              <p>Alice Johnson</p>
-            </div>
-            <div class="friend">
-              <img src="https://pbs.twimg.com/media/F0aeZ-qXoAIUg5N.jpg" alt="Friend 4">
-              <p>Bob Brown</p>
-            </div>
-            <div class="friend">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd1TN7rnvrJPwtODMwF86TSbzYtZyqn9WqHg&s" alt="Friend 5">
-              <p>Charlie Davis</p>
-            </div>
-            <div class="friend">
-              <img src="https://ntvb.tmsimg.com/assets/assets/70022_v9_bb.jpg" alt="Friend 6">
-              <p>Eve White</p>
-            </div>
+      <main class="main">
+        <section class="sidebar">
+          <div
+            style="
+              border: #1877f2 1px dashed;
+              padding: 18px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 6px;
+            "
+          >
+            <form>
+              <input
+                type="search"
+                placeholder="search"
+                style="margin-bottom: 10px"
+              />
+              <div style="display: flex; gap: 30px" class="simpletext">
+                quick search
+                <button
+                  class="simpletext"
+                  style="
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    background: #1877f2;
+                    color: white;
+                  "
+                >
+                  go
+                </button>
+              </div>
+            </form>
           </div>
-        </div>
-      </div>
-
-      <!-- Right Column -->
-      <div class="right-column">
-        <h3>Information</h3>
-          <table class="info-table">
-            <tr><td><strong>Name:</strong></td><td>Brian Moore</td></tr>
-            <tr><td><strong>Member Since:</strong></td><td>May 21, 2005</td></tr>
-            <tr><td><strong>Last Update:</strong></td><td>July 19, 2005</td></tr>
-            <tr><td><strong>School:</strong></td><td>Puget Sound '09</td></tr>
-            <tr><td><strong>Status:</strong></td><td>Student</td></tr>
-            <tr><td><strong>Gender:</strong></td><td>Male</td></tr>
-            <tr><td><strong>Residence:</strong></td><td>Todd 311</td></tr>
-            <tr><td><strong>Birthday:</strong></td><td>09/02/1986</td></tr>
-            <tr><td><strong>Home Town:</strong></td><td>Shorewood, WI</td></tr>
-            <tr><td><strong>Hobbies:</strong></td><td>Film, Graphic Design, Video Editing</td></tr>
-            <tr><td><strong>Favorite Music:</strong></td><td>Beck, The Beatles, Radiohead</td></tr>
-            <tr><td><strong>Favorite Movies:</strong></td><td>Office Space, Eternal Sunshine</td></tr>
-          </table>
+          <div style="border: #1877f2 1px dashed; padding: 18px">
+            <p class="simpletext" style="color: #1877f2">My Profile [ edit ]</p>
+            <p class="simpletext" style="color: #1877f2">My Friends</p>
+            <p class="simpletext" style="color: #1877f2">My Groups</p>
+            <p class="simpletext" style="color: #1877f2">My Parties</p>
+            <p class="simpletext" style="color: #1877f2">My Messages</p>
+            <p class="simpletext" style="color: #1877f2">My Account</p>
+            <p class="simpletext" style="color: #1877f2">My Privacy</p>
+          </div>
+          <div>
+            <img src="https://i.pinimg.com/736x/68/35/b9/6835b9b1a55b05344daf11bb70f52851.jpg" alt="friends photo" width="100%" height="500px" margin: auto; />
+          </div>
+        </section>
+        <section class="rightside" style="border: #1877f2 solid 1px">
+          <div class="subheader">
+            <p>Brian Moore's Profile</p>
+            <p>Puget Sound</p>
+          </div>
+          <div class="content">
+            <div
+              class="leftcontents"
+              style="display: flex; flex-direction: column; gap: 20px"
+            >
+              <span class="component">
+                <div class="subheader">Picture</div>
+                <div style="padding: 5px">
+                  <img alt="profile" src="https://i.pinimg.com/736x/47/ec/68/47ec685515732b0d641977dc8523fef5.jpg" width="150px" />
                 </div>
-      </div>
+              </span>
+              <span style="width: 300px; border: 1px solid #1877f2">
+                <p class="simpletext" style="padding: 5px">
+                  Send Brian a Message
+                </p>
+                <p
+                  class="simpletext"
+                  style="padding: 5px; border-top: #1877f2 solid 1px"
+                >
+                  Poke him!
+                </p>
+              </span>
+              <span class="component">
+                <div class="subheader">Connection</div>
+                <div style="padding: 5px">
+                  <p class="simpletext">You're in relationship with Luna.</p>
+                </div>
+              </span>
+              <span class="component">
+                <div class="subheader">Mutual Friends</div>
+                <div style="padding: 5px">
+                  <p class="simpletext">
+                    You have <a style="color: #1877f2">13 friends </a>in common
+                    with Brian.
+                  </p>
+                </div>
+              </span>
+              <span class="component">
+                <div class="subheader">Access</div>
+                <div style="padding: 5px">
+                  <p class="simpletext">
+                    Brian is currently logged in from a non-residential
+                    location.
+                  </p>
+                </div>
+              </span>
+              <span class="component">
+                <div class="subheader">Friends at Puget Sound</div>
+                <div
+                  style="
+                    padding: 10px;
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    column-gap: 20px;
+                    row-gap: 20px;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      flex-direction: column;
+                    "
+                  >
+                    <img alt="girl photo" src="https://i.pinimg.com/736x/fc/12/04/fc1204e6433983a2f6f7fb2f488b744e.jpg" width="70px" />
+                    <p class="simpletext" style="margin-top: 5px">Jinx</p>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      flex-direction: column;
+                    "
+                  >
+                    <img alt="girl photo" src="https://i.pinimg.com/736x/91/24/2f/91242fe76f3861a7ada274842255caeb.jpg" width="60px" />
+                    <p class="simpletext" style="margin-top: 5px">Hisha</p>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      flex-direction: column;
+                    "
+                  >
+                    <img alt="girl photo" src="https://i.pinimg.com/736x/7b/00/6b/7b006b81162b0fe19cfca38feb1c9bd0.jpg" width="70px" />
+                    <p class="simpletext" style="margin-top: 5px">Bode</p>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      flex-direction: column;
+                    "
+                  >
+                    <img alt="girl photo" src="https://i.pinimg.com/736x/da/f6/25/daf6258d000b318a59ae285905bf8e19.jpg" width="60px" />
+                    <p class="simpletext" style="margin-top: 5px">John</p>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      flex-direction: column;
+                    "
+                  >
+                    <img alt="girl photo" src="https://i.pinimg.com/736x/cd/50/26/cd5026ac9520a09079cae92e348ff9a1.jpg" width="50px" />
+                    <p class="simpletext" style="margin-top: 5px">Tylor</p>
+                  </div>
+                </div>
+              </span>
+            </div>
+            <div class="rightside">
+              <span class="subheader">Information</span>
+              <div
+                style="
+                  width: 100%;
+                  border: #1877f2 solid 1px;
+                  padding-top: 20px;
+                  padding-bottom: 20px;
+                "
+              >
+                <table>
+                  <thead>
+                    <tr>
+                      <th
+                        style="
+                          font-weight: 900;
+                          font-family: sans-serif;
+                          font-size: 15px;
+                          text-align: left;
+                          padding-left: 20px;
+                        "
+                      >
+                        Account Info
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Name:</th>
+                      <th class="tabletext simpletext">Brian Moore</th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Member Since:</th>
+                      <th class="tabletext simpletext">May 21, 2005</th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Last Update:</th>
+                      <th class="tabletext simpletext">July 19, 2005</th>
+                    </tr>
+                    <tr>
+                      <th
+                        style="
+                          font-weight: 900;
+                          font-family: sans-serif;
+                          font-size: 15px;
+                          text-align: left;
+                          padding-left: 20px;
+                        "
+                      >
+                        Basic Info
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">School:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        National University of Mongolia
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Status:</th>
+                      <th class="tabletext simpletext">Student</th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Sex:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        Male
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Residence:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        Tedd 21
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Birthday:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        May 22, 2005
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Home Town:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        Delhiin haa negtee
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">High School:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        1r arwan jil uvs hh
+                      </th>
+                    </tr>
+                    <tr>
+                      <th
+                        style="
+                          font-weight: 900;
+                          font-family: sans-serif;
+                          font-size: 15px;
+                          text-align: left;
+                          padding-left: 20px;
+                        "
+                      >
+                        Contact Info
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Email:</th>
+                      <th class="tabletext simpletext">enhbayarerdeneochir5@gmail.com</th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Screenname:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        Enhbayar
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Mobile:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        95551002
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Website:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        www.facebook/brian.com
+                      </th>
+                    </tr>
+                    <tr>
+                      <th
+                        style="
+                          font-weight: 900;
+                          font-family: sans-serif;
+                          font-size: 15px;
+                          text-align: left;
+                          padding-left: 20px;
+                        "
+                      >
+                        Personal Info
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Looking For:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        Olymp Medal
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Interested In:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        Women
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Relationship Status:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        Taken
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Political Views:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        Very Liberal
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Interests:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        lorem ipsum aas awdiu gej bodoj baisan bolilee.Shorthand property to set values for the thickness of
+                        the padding area. If left is omitted, it is the same as
+                        right. If bottom is omitted it is the same as top, if
+                        right is omitted it is the same as top. The value may
+                        not be negative.
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Favorite Music:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        Shorthand property to set values for the thickness of
+                        the padding area. If left is omitted, it is the same as
+                        right. If bottom is omitted it is the same as top, if
+                        right is omitted it is the same as top. The value may
+                        not be negative.
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">Favorite Movies:</th>
+                      <th class="tabletext simpletext" style="color: #1877f2">
+                        Shorthand property to set values for the thickness of
+                        the padding area. If left is omitted, it is the same as
+                        right. If bottom is omitted it is the same as top, if
+                        right is omitted it is the same as top. The value may
+                        not be negative.
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tabletext simpletext">About Me:</th>
+                      <th class="tabletext simpletext">
+                        Shorthand property to set values for the thickness of
+                        the padding area. If left is omitted, it is the same as
+                        right. If bottom is omitted it is the same as top, if
+                        right is omitted it is the same as top. The value may
+                        not be negative.
+                      </th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-  </div>
-
-  <script>
-    function performSearch() {
-      alert("Search functionality is not implemented yet!");
-    }
-  </script>
-</body>
+  </body>
 </html>
