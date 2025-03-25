@@ -1,176 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My CV - Enhbayar</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('https://mongolia.un.org/sites/default/files/styles/featured_image/public/2023-04/nomadic_mongolian_herders_move_seasonally_for_better_pasture_for_their_livestock_ciommongolia.jpg?itok=RGU4yKP1') no-repeat center center fixed;
-      background-size: cover;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эрдэнэ-Очирын Энхбаярын CV</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://cdn.pixabay.com/photo/2021/11/26/14/39/mongolian-pattern-6824067_1280.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
 
-    .overlay {
-      background-color: rgba(255, 255, 255, 0.92);
-      min-height: 100vh;
-      padding: 30px;
-    }
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border: 6px double #eeff06;
+        }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
-    }
+        h1, h2 {
+            color: #003366; /* Dark Blue */
+            border-bottom: 2px dashed #fffa63;
+            padding-bottom: 6px;
+        }
 
-    .header {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+        h1 {
+            text-align: center;
+            font-size: 2.6em;
+            font-family: 'Mongolian Baiti', serif;
+        }
 
-    .header h1 {
-      color: #004d66;
-      margin-bottom: 5px;
-    }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.05em;
+        }
 
-    .contact {
-      font-size: 0.95rem;
-      color: #666;
-    }
+        .contact-info a {
+            color: #003366; /* Dark Blue */
+        }
 
-    .profile-picture {
-      display: block;
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin: 15px auto;
-      border: 4px solid #004d66;
-    }
+        .section {
+            margin-bottom: 25px;
+        }
 
-    h2 {
-      color: #006699;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-    }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
 
-    .section {
-      margin-bottom: 30px;
-    }
+        .skills span {
+            background: #003366; /* Dark Blue */
+            color: white;
+            padding: 6px 14px;
+            border-radius: 16px;
+            font-size: 0.9em;
+        }
 
-    .skills span {
-      display: inline-block;
-      background-color: #006699;
-      color: white;
-      padding: 8px 14px;
-      margin: 6px 6px 0 0;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      transition: background 0.3s;
-    }
+        ul {
+            padding-left: 20px;
+        }
 
-    .skills span:hover {
-      background-color: #004d66;
-      cursor: default;
-    }
+        ul li {
+            margin-bottom: 6px;
+        }
 
-    ul {
-      padding-left: 20px;
-    }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+            font-style: italic;
+        }
 
-    ul li {
-      margin-bottom: 8px;
-    }
-
-    a {
-      color: #004d66;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    @media screen and (max-width: 600px) {
-      .container {
-        padding: 20px;
-      }
-      .profile-picture {
-        width: 140px;
-        height: 140px;
-      }
-    }
-  </style>
+        .profile-picture {
+            display: block;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 20px auto;
+            border: 4px solid #003366; /* Dark Blue Border */
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 <body>
-  <div class="overlay">
-    <div class="container">
-      <div class="header">
-        <h1>Э.Энхбаяр</h1>
-        <p class="contact">enhbayarerdeneochir5@gmail.com | Phone: +95559955 | Location: Ulaanbaatar, Mongolia</p>
-        <img src="https://scontent.fuln1-1.fna.fbcdn.net/v/t39.30808-6/481171245_2152677318525885_5239644124277501812_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=bBMvBXu9iDYQ7kNvgHzJF3G&_nc_oc=AdgGvgfNI568LglAl3qQwE7SMShUU6PcGiH-wGBia88OEBfyGZXnSS_1Te_3_rZmI0yGHmpOmbfdtMhxhKkJhPAA&_nc_zt=23&_nc_ht=scontent.fuln1-1.fna&_nc_gid=ASloWX1d51Ct9Yl9_9cdXnp&oh=00_AYG_BbLm0PM81w6grbwAtyU9tsU0T3OI05nH91OF1KvpyQ&oe=67D6334A"
-          alt="Profile Picture" class="profile-picture" />
-      </div>
+  
+<div  class="container" >
+  
+    <h1>Эрдэнэ-Очирын Энхбаяр</h1>
+    <img src="https://scontent-hkg1-1.xx.fbcdn.net/v/t39.30808-6/481171245_2152677318525885_5239644124277501812_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeG101mP1D60E-muwIgVl2B4BebPqsONRj8F5s-qw41GP4xnYq27fqojwYUKUgAfPYxlAlFv3CjdRzfvbriKN0Sn&_nc_ohc=pODSmKDlJckQ7kNvgEUPHk_&_nc_oc=AdkmjWqWSHh9uxUmkFxVmbtlBfFqY9HoeVpGN3IbNHbX9z5_e4P28MvFvTflS3a4HMw&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_gid=Q4nI2ssl5-1PYNLLBMXqlQ&oh=00_AYGTh8i_eIvhuzRrFxwgP8drv3Qc7FaI_sly-201IgZPOA&oe=67E0168A" alt="Profile Picture" class="profile-picture">
 
-      <div class="section">
+    <div class="contact-info">
+        <p><strong>Имэйл:</strong> <a href="mailto:enhbayarerdeneochir5@gmail.com">enhbayarerdeneochir5@gmail.com</a></p>
+        <p><strong>Утас:</strong> <a href="tel:+95559955">+976-95559955</a></p>
+        <p><strong>Байршил:</strong> Улаанбаатар, Монгол Улс</p>
+    </div>
+
+    <div class="section">
         <h2>Танилцуулга</h2>
-        <p>Компьютерын Сүлжээ мэргэжлээр суралцаж буй оюутан. Мэргэжлээ сайжруулж, чадварлаг хүмүүстэй хамтран хөгжих сонирхолтой. Боломжоо бүрэн ашиглаж, өөрийгөө сорих дуртай.</p>
-      </div>
+        <p>Миний нэр бол Эрдэнэ-Очирын Энхбаяр. Би орчин үеийн технологи, компьютерын сүлжээний чиглэлээр тасралтгүй суралцаж буй, идэвх санаачлагатай, бүтээлч оюутан юм. Шинэ зүйлд суралцах, өөрийгөө сорих, мэдээллийн аюулгүй байдлыг гүнзгий судлах хүсэлтэй.</p>
+    </div>
 
-      <div class="section">
+    <div class="section">
         <h2>Боловсрол</h2>
-        <p><strong>National University of Mongolia</strong> — Компьютерын Сүлжээ<br>
-        Элссэн: 2023 оны 9-р сар – Одоогийн байдлаар</p>
-      </div>
-
-      <div class="section">
-        <h2>Туршлага</h2>
-        <p><strong>Blender Animation Developer</strong> – Мөчир TM<br>
-        June 2024 – Aug 2024</p>
         <ul>
-          <li>Blackpink-ийн охидууд намайг Instagram дээр дагадаг.</li>
-          <li>Хаан банк болон монгол мэдээний сайтуудад hack хийж байсан хаха.</li>
-          <li>Хойд солонгосын Crypto $3.5 сая долларын хэрэгт холбогдож хахахаха.</li>
+            <li><strong>Монгол Улсын Их Сургууль (МУИС)</strong> – Компьютерын Сүлжээ<br>2023 оны 9-р сараас – Одоог хүртэл</li>
+            <li><strong>Эрдмийн Дунд Сургууль</strong> – Ерөнхий боловсрол (2011 – 2023)</li>
         </ul>
-      </div>
+    </div>
 
-      <div class="section">
+    <div class="section">
+        <h2>Туршлага</h2>
+        <ul>
+            <li><strong>Захирал</strong> – Microsoft, Dubai (2022.01 – 2023.12)<br>Дубайд Microsoft-ийн төв оффисоос мэдээллийн технологи, хөндлөн үйл ажиллагааны менежмент хариуцан ажиллаж байсан. Компаниудын төслийн амжилттай хэрэгжилтэд удирдлага, стратеги боловсруулсан.</li>
+            <li><strong>Фэйсбүүк, Технологийн Инженер</strong> – Facebook, Сан Франциско (2020.03 – 2021.12)<br>Facebook-ийн инженерийн багт ажиллаж, платформын аюулгүй байдлыг сайжруулахад оролцсон. Үндсэндээ Facebook-ийн шилдэг системүүдийн аюулгүй байдалд хувь нэмэр оруулсан.</li>
+            <li><strong>Шидэт Сургуульд Шинжлэх Ухаан, Технологийн Менежер</strong> – Гогварцийн Шидэт Сургууль (2018.09 – 2019.06)<br>Шидэт сургуульд мэдээллийн технологи болон шидэт код бичих хичээлүүдийг хариуцан, суралцагчдад дижитал шидэт хэрэглүүр бүтээхэд тусалсан.</li>
+            <li><strong>Фриланс Вэб хөгжүүлэгч</strong> (2019 – одоо)<br>HTML, CSS ашиглан вэб сайт бүтээх, хэрэглэгчдэд тохирсон загвар бүтээх, GitHub Pages-д байршуулсан.</li>
+        </ul>
+    </div>
+
+    <div class="section">
         <h2>Ур Чадварууд</h2>
         <div class="skills">
-          <span>Networking</span>
-          <span>Рагби</span>
-          <span>Америк Хөлбөмбөг</span>
-          <span>Wireshark</span>
-          <span>SQL</span>
-          <span>HTML & CSS</span>
-          <span>Сагсан бөмбөг</span>
+            <span>Компьютерын Сүлжээ</span>
+            <span>Wireshark</span>
+            <span>Packet Tracer</span>
+            <span>HTML/CSS</span>
+            <span>SQL</span>
+            <span>Linux CLI</span>
+            <span>Git & GitHub</span>
+            <span>Blender</span>
+            <span>JavaScript</span>
         </div>
-      </div>
+    </div>
 
-      <div class="section">
+    <div class="section">
         <h2>Төслүүд</h2>
         <ul>
-          <li><strong>LAN Design Simulation:</strong> Cisco Packet Tracer дээр LAN Simulation хийсэн.</li>
-          <li><strong>SQL Database Tasks:</strong> DBMS дээр SQL ажлууд хийж, компанийн системд туслалцаа үзүүлж байсан.</li>
+            <li><strong>LAN Topology Design:</strong> Cisco Packet Tracer ашиглан сургуулийн сүлжээний топологи зохион байгуулсан.</li>
+            <li><strong>Database Management System:</strong> SQL өгөгдлийн бааз дээр бүртгэлийн систем зохион байгуулсан.</li>
+            <li><strong>CV Portfolio Website:</strong> HTML, CSS ашиглан өөрийн намтар танилцуулгын вэб хуудас бүтээсэн.</li>
         </ul>
-      </div>
+    </div>
 
-      <div class="section">
+    <div class="section">
         <h2>Хэлний Чадвар</h2>
         <ul>
-          <li>Англи хэл — C2 чөлөөтэй</li>
-          <li>Испани хэл — B2 (дунд)</li>
-          <li>Монгол хэл — Төрөлх</li>
+            <li>Монгол хэл – Төрөлх</li>
+            <li>Англи хэл – C1 (Дунд ба дээш түвшин)</li>
+            <li>Орос хэл – A2 (Анхан шат)</li>
         </ul>
-      </div>
     </div>
-  </div>
+
+    <div class="footer">
+        © 2025 Эрдэнэ-Очирын Энхбаяр — Монгол уламжлал, орчин үеийн хөгжил.
+    </div>
+</div>
+
 </body>
 </html>
