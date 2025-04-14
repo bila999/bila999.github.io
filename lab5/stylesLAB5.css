@@ -1,0 +1,39 @@
+body {
+    padding: 20px;
+  }
+  .jumbotron {
+    background-color: #1a0d56;
+    color: white;
+  }
+  .btn-learn {
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+  }
+  .important-box {
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .right-side {
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin-top: 10px;
+  }
+  .btn-cool, .btn-lame {
+    width: 49%;
+  }
+  footer {
+    margin-top: 20px;
+    background-color: #1a0d56;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  .thumbnail-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
