@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ханш тооцоологч</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="converter-box">
+    <h2>Currency Converter</h2>
+
+    <label>Мөнгөн дүн:</label>
+    <input type="number" id="amount" placeholder="Мөнгөн дүнгээ оруулна уу">
+
+    <label>Юунаас:</label>
+    <select id="fromCurrency">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="MNT">MNT</option>
+    </select>
+
+    <label>Юу:</label>
+    <select id="toCurrency">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="MNT">MNT</option>
+    </select>
+
+    <button onclick="convertCurrency()">Convert</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="value.js"></script>
+</body>
+</html>
