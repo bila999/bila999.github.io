@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Ханш тооцоологч</title>
+  <meta charset="UTF-8">
+  <title>Ханш хөрвүүлэгч</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <h2>Ханш хөрвүүлэгч</h2>
 
-  <div class="converter-box">
-    <h2>Currency Converter</h2>
+    <input type="text" id="amount" readonly placeholder="0">
 
-    <label>Мөнгөн дүн:</label>
-    <input type="number" id="amount" placeholder="Мөнгөн дүнгээ оруулна уу">
+    <div class="buttons">
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button onclick="clearInput()">C</button>
+      <button onclick="appendNumber('0')">0</button>
+      <button onclick="appendNumber('.')">.</button>
+    </div>
 
-    <label>Юунаас:</label>
-    <select id="fromCurrency">
-      <option value="USD">USD</option>
-      <option value="EUR">EUR</option>
-      <option value="MNT">MNT</option>
-    </select>
+    <div class="dropdowns">
+      <select id="fromCurrency"></select>
+      <select id="toCurrency"></select>
+    </div>
 
-    <label>Юу:</label>
-    <select id="toCurrency">
-      <option value="USD">USD</option>
-      <option value="EUR">EUR</option>
-      <option value="MNT">MNT</option>
-    </select>
-
-    <button onclick="convertCurrency()">Convert</button>
-
+    <button class="convert-btn" onclick="convert()">хөрвүүл</button>
     <div id="result"></div>
   </div>
 
